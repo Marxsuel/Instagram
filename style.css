@@ -1,0 +1,242 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(243, 243, 243);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.instagram-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 40%;
+    height: 100vh;
+}
+
+.instagram-phone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.instagram-phone img {
+    height: 50rem;
+}
+
+.instagram-continue {
+    display: flex;
+    align-items: center; /* horizontal */
+    justify-content: space-around; /* vertical */
+    flex-direction: column;
+    width: 100%;
+    min-height: 34rem;
+}
+
+/*container login*/
+
+.group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 350px;
+    height: 390px;
+    padding: 1.3rem 0;
+    border: 1px solid lightgray;
+}
+/* seção de login*/
+
+
+.login-with-fb,
+form { width: 100%; }
+
+.register,
+form { padding: 30px 20px; }
+
+.login-with-fb { padding: 30px 20px 20px 20px; }
+
+form .sr-only { display: none; }
+
+form input {
+    background-color: #fafafa;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    color: #808080;
+    margin-bottom: 8px;
+    padding: 10px 10px;
+    width: 100%;
+}
+
+form input::placeholder {
+    color: #808080;
+}
+
+form input:focus {
+    border: 1px solid #808080;
+    outline: none;
+}
+
+form button {
+    background-color: #0095f6;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+    height: 35px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+
+.separator span {
+    background-color: #dbdbdb;
+    height: 1px;
+    width: calc(100% - 10px);
+}
+
+.separator .or {
+    color: #808080;
+    font-weight: bold;
+}
+
+.separator { padding: 0 20px; 
+    
+}
+.separator span:first-child { margin-right: 10px;}
+.separator span:last-child { margin-left: 10px;}
+
+/* container cadastre-se */
+
+.group-2{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 350px;
+    height: 63px;
+    padding: 1.3rem 0;
+    border: 1px solid lightgray;
+    text-justify: center;
+}
+.group-2 p{
+
+    color: #0095f6;
+    font-family: sans-serif;
+}
+
+
+.group:nth-child(1) {
+    min-height: 19rem;
+}
+
+.instagram-logo {
+    height: 3rem;
+}
+
+
+.instagram-login {
+    background-color: #0095f6;
+    color: #ffffff;
+    padding: 8px;
+    border-radius: 4px;
+    width: 60%;
+    text-align: center;
+}
+
+.instagram-logout {
+    color: #0095f6;
+    margin-top: 1rem;
+}
+
+.not-account {
+    color: rgb(160, 160, 160);
+}
+
+.link-blue {
+    color: #0095f6;
+}
+
+.loginf{
+   color: #385185
+   
+}
+
+.get-the-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    padding: 1.3rem 0;
+}
+
+.download {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+
+.app-download {
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+        
+}
+.app-download:nth-child(1) {
+    background-image: url('./img/apple-button.png');
+}
+
+.app-download:nth-child(2) {
+    background-image: url('./img/googleplay-button.png');
+}
+
+
+/* media queries */
+
+
+@media (max-width: 1024px) {
+    .instagram-wrapper {
+        width: 90%;
+    }
+}
+
+@media (max-width: 650px) {
+    body {
+        background-color: #ffffff;
+    }
+
+    .instagram-wrapper {
+        width: 90%;
+    }
+
+    .instagram-phone {
+        display: none;
+    }
+
+    .instagram-continue {
+        width: 100%;
+    }
+    
+    .group {
+        border: 1px solid transparent;
+    }
+}
+
+/* ainda vou terminar a estilização conforme for aperfeiçoando as habilidades */
